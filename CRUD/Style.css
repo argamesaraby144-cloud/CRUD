@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    padding: 4px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+input:hover{
+    transform: scale(1.01);
+}
+
+input:focus{
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.prices input{
+    width: 20%;
+    margin-right: 6px;
+}
+
+#total{
+    background-color: #970808;
+    padding: 5px 2px;
+    border-radius: 5px;
+}
+
+#total::before{
+    content: 'Total: ';
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cancel{
+    width: 30%;
+    margin-left: 20px;
+    display: none;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    font-family: system-ui;
+    font-weight: 700;
+    background-color: #14015a;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #190366;
+    transform: scale(1.01);
+    letter-spacing: 1px;
+}
+
+.btn_search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_search button{
+    width: 45%;
+}
+
+#deleteAll{
+    margin: 20px 0;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+th,td {
+    padding: 5px;
+}
+table button{
+    width: 80%;
+}
